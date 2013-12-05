@@ -979,7 +979,7 @@ int ofxKinectNui::getPlayerIndexAt(const ofPoint& point){
 	@param	depthPoint	position on depth sensor
 	@return	player index	0 when no player
 */
-float ofxKinectNui::getAudioBeamAngle(){
+float ofxKinectNui::getAudioBeamAngle() const{
 	return audioBeamAngle;
 }
 
@@ -989,7 +989,7 @@ float ofxKinectNui::getAudioBeamAngle(){
 	@param	depthPoint	position on depth sensor
 	@return	player index	0 when no player
 */
-float ofxKinectNui::getAudioAngle(){
+float ofxKinectNui::getAudioAngle() const{
 	return audioAngle;
 }
 
@@ -999,7 +999,7 @@ float ofxKinectNui::getAudioAngle(){
 	@param	depthPoint	position on depth sensor
 	@return	player index	0 when no player
 */
-float ofxKinectNui::getAudioAngleConfidence(){
+float ofxKinectNui::getAudioAngleConfidence() const{
 	return audioAngleConfidence;
 }
 
@@ -1008,7 +1008,7 @@ float ofxKinectNui::getAudioAngleConfidence(){
 	@brief	Determines whether the frame is updated
 	@return	true when frame is updated
 */
-bool ofxKinectNui::isFrameNew(){
+bool ofxKinectNui::isFrameNew() const{
 	return bIsFrameNew;
 }
 
@@ -1017,7 +1017,7 @@ bool ofxKinectNui::isFrameNew(){
 	@brief	Determines whether this kinect device is initialized
 	@return	true when kinect is initialized
 */
-bool ofxKinectNui::isInited(){
+bool ofxKinectNui::isInited() const{
 	return bIsInited;
 }
 
@@ -1035,7 +1035,7 @@ bool ofxKinectNui::isConnected(){
 	@brief	Determines whether this kinect stream is opened
 	@return	true when stream is opened
 */
-bool ofxKinectNui::isOpened(){
+bool ofxKinectNui::isOpened() const{
 	return bIsOpened;
 }
 
@@ -1044,7 +1044,7 @@ bool ofxKinectNui::isOpened(){
 	@brief	Determines whether this kinect depth sensor is nearmode
 	@return	true when depth sensor is nearmode
 */
-bool ofxKinectNui::isNearmode(){
+bool ofxKinectNui::isNearmode() const{
 	return bIsNearmode;
 }
 
@@ -1053,7 +1053,7 @@ bool ofxKinectNui::isNearmode(){
 	@brief	is found skeleton
 	@return	true when skeleton is found
 */
-bool ofxKinectNui::isFoundSkeleton(){
+bool ofxKinectNui::isFoundSkeleton() const{
 	return bIsFoundSkeleton;
 }
 
@@ -1062,7 +1062,7 @@ bool ofxKinectNui::isFoundSkeleton(){
 	@brief	whether the target skeleton is tracked
 	@return	true when the skeleton is tracked
 */
-bool ofxKinectNui::isTrackedSkeleton(int id){
+bool ofxKinectNui::isTrackedSkeleton(int id) const{
 	if(bGrabsSkeleton){
 		if(skeletonPoints[id][0].z < 0){
 			return false;
@@ -1080,7 +1080,7 @@ bool ofxKinectNui::isTrackedSkeleton(int id){
 	@brief	Determines whether the kinect grabs video stream
 	@return	true when grabs video
 */
-bool ofxKinectNui::grabsVideo(){
+bool ofxKinectNui::grabsVideo() const{
 	return bGrabsVideo;
 }
 
@@ -1089,7 +1089,7 @@ bool ofxKinectNui::grabsVideo(){
 	@brief	Determines whether the kinect grabs depth stream
 	@return	true when grabs depth
 */
-bool ofxKinectNui::grabsDepth(){
+bool ofxKinectNui::grabsDepth() const{
 	return bGrabsDepth;
 }
 
@@ -1098,7 +1098,7 @@ bool ofxKinectNui::grabsDepth(){
 	@brief	Determines whether the kinect grabs skeleton
 	@return	true when grabs skeleton
 */
-bool ofxKinectNui::grabsSkeleton(){
+bool ofxKinectNui::grabsSkeleton() const{
 	return bGrabsSkeleton;
 }
 
@@ -1107,7 +1107,7 @@ bool ofxKinectNui::grabsSkeleton(){
 	@brief	Determines whether the kinect grabs label data
 	@return	true when grabs label
 */
-bool ofxKinectNui::grabsLabel(){
+bool ofxKinectNui::grabsLabel() const{
 	return bGrabsLabel;
 }
 
@@ -1116,7 +1116,7 @@ bool ofxKinectNui::grabsLabel(){
 	@brief	Determines whether the kinect grabs audio data
 	@return	true when grabs audio
 */
-bool ofxKinectNui::grabsAudio(){
+bool ofxKinectNui::grabsAudio() const{
 	return bGrabsAudio;
 }
 
@@ -1125,7 +1125,7 @@ bool ofxKinectNui::grabsAudio(){
 	@brief	Determines whether the kinect grabs calibrated video stream
 	@return	true when grabs calibrated video
 */
-bool ofxKinectNui::grabsCalibratedVideo(){
+bool ofxKinectNui::grabsCalibratedVideo() const{
 	return bGrabsCalibratedVideo;
 }
 
@@ -1134,7 +1134,7 @@ bool ofxKinectNui::grabsCalibratedVideo(){
 	@brief	Determines whether the kinect grabs separeted label data for cv
 	 * @return	true when grabs separeted label for cv
 */
-bool ofxKinectNui::grabsLabelCv(){
+bool ofxKinectNui::grabsLabelCv() const{
 	return bGrabsLabelCv;
 }
 
@@ -1143,7 +1143,7 @@ bool ofxKinectNui::grabsLabelCv(){
 	@brief	Gets video resolution
 	@return	video image resolution
 */
-NUI_IMAGE_TYPE ofxKinectNui::getVideoImageType(){
+NUI_IMAGE_TYPE ofxKinectNui::getVideoImageType() const{
 	return mVideoImageType;
 }
 
@@ -1152,7 +1152,7 @@ NUI_IMAGE_TYPE ofxKinectNui::getVideoImageType(){
 	@brief	Gets video resolution
 	@return	video image resolution
 */
-NUI_IMAGE_RESOLUTION ofxKinectNui::getVideoResolution(){
+NUI_IMAGE_RESOLUTION ofxKinectNui::getVideoResolution() const{
 	return mVideoResolution;
 }
 
@@ -1161,7 +1161,7 @@ NUI_IMAGE_RESOLUTION ofxKinectNui::getVideoResolution(){
 	@brief	Gets depth resolution
 	@return	depth image resolution
 */
-NUI_IMAGE_RESOLUTION ofxKinectNui::getDepthResolution(){
+NUI_IMAGE_RESOLUTION ofxKinectNui::getDepthResolution() const{
 	return mDepthResolution;
 }
 
@@ -1170,7 +1170,7 @@ NUI_IMAGE_RESOLUTION ofxKinectNui::getDepthResolution(){
 	@brief	Gets width of video resolution
 	@return	width
 */
-int ofxKinectNui::getVideoResolutionWidth(){
+int ofxKinectNui::getVideoResolutionWidth() const{
 	return width;
 }
 
@@ -1179,7 +1179,7 @@ int ofxKinectNui::getVideoResolutionWidth(){
 	@brief	Gets height of video resolution
 	@return	height
 */
-int ofxKinectNui::getVideoResolutionHeight(){
+int ofxKinectNui::getVideoResolutionHeight() const{
 	return height;
 }
 
@@ -1188,7 +1188,7 @@ int ofxKinectNui::getVideoResolutionHeight(){
 	@brief	Gets width of depth resolution
 	@return	width
 */
-int ofxKinectNui::getDepthResolutionWidth(){
+int ofxKinectNui::getDepthResolutionWidth() const{
 	return depthWidth;
 }
 
@@ -1197,7 +1197,7 @@ int ofxKinectNui::getDepthResolutionWidth(){
 	@brief	Gets height of depth resolution
 	@return	height
 */
-int ofxKinectNui::getDepthResolutionHeight(){
+int ofxKinectNui::getDepthResolutionHeight() const{
 	return depthHeight;
 }
 

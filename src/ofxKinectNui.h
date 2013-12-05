@@ -163,35 +163,35 @@ public:
 	int getPlayerIndexAt(int depthX, int depthY);
 	int getPlayerIndexAt(const ofPoint& point);
 
-	float getAudioBeamAngle();
-	float getAudioAngle();
-	float getAudioAngleConfidence();
+	float getAudioBeamAngle() const;
+	float getAudioAngle() const;
+	float getAudioAngleConfidence() const;
 	
-	bool isFrameNew();
-	bool isInited();
+	bool isFrameNew() const;
+	bool isInited() const;
 	bool isConnected();
-	bool isOpened();
-	bool isNearmode();
-	bool isFoundSkeleton();
-	bool isTrackedSkeleton(int id);
-	bool isMirror();
+	bool isOpened() const;
+	bool isNearmode() const;
+	bool isFoundSkeleton() const;
+	bool isTrackedSkeleton(int id) const;
+	bool isMirror() const;
 
-	bool grabsVideo();
-	bool grabsDepth();
-	bool grabsLabel();
-	bool grabsSkeleton();
-	bool grabsAudio();
-	bool grabsCalibratedVideo();
-	bool grabsLabelCv();
+	bool grabsVideo() const;
+	bool grabsDepth() const;
+	bool grabsLabel() const;
+	bool grabsSkeleton() const;
+	bool grabsAudio() const;
+	bool grabsCalibratedVideo() const;
+	bool grabsLabelCv() const;
 
-	NUI_IMAGE_RESOLUTION getVideoResolution();
-	NUI_IMAGE_RESOLUTION getDepthResolution();
+	NUI_IMAGE_RESOLUTION getVideoResolution() const;
+	NUI_IMAGE_RESOLUTION getDepthResolution() const;
 
-	NUI_IMAGE_TYPE getVideoImageType();
-	int getVideoResolutionWidth();
-	int getVideoResolutionHeight();
-	int getDepthResolutionWidth();
-	int getDepthResolutionHeight();
+	NUI_IMAGE_TYPE getVideoImageType() const;
+	int getVideoResolutionWidth() const;
+	int getVideoResolutionHeight() const;
+	int getDepthResolutionWidth() const;
+	int getDepthResolutionHeight() const;
 
 	void enableDepthNearValueWhite(bool bEnabled);
 	bool isDepthNearValueWhite();
