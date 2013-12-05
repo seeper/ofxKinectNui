@@ -235,8 +235,12 @@ protected:
 	std::vector<BYTE> soundBuffer;	///<	audio buffer
 	float audioBeamAngle, audioAngle, audioAngleConfidence;	///< for audio
 
+	// 2013-12-05 These two variables are protected on the original ofxKinectNui.
+	// Would be good to find a way not to need to expose them
+public:
 	ofPoint skeletonPoints[SKELETON_COUNT][SKELETON_POSITION_COUNT];	///< joint points of all skeletons
 	ofPoint rawSkeletonPoints[SKELETON_COUNT][SKELETON_POSITION_COUNT];	///< joint points of all skeletons
+protected:
 
 	int targetAngle;	///< target angle of kinect tilt
 	
