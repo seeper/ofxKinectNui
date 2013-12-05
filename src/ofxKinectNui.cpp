@@ -1011,6 +1011,9 @@ float ofxKinectNui::getAudioAngleConfidence() const{
 bool ofxKinectNui::isFrameNew() const{
 	return bIsFrameNew;
 }
+bool ofxKinectNui::isFrameNew() {
+	return bIsFrameNew;
+}
 
 //---------------------------------------------------------------------------
 /**

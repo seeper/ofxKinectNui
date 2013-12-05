@@ -167,6 +167,7 @@ public:
 	float getAudioAngle() const;
 	float getAudioAngleConfidence() const;
 	
+	bool isFrameNew();
 	bool isFrameNew() const;
 	bool isInited() const;
 	bool isConnected();
