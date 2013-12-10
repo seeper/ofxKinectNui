@@ -13,6 +13,9 @@
 #ifndef OFX_KINECT_NUI_SOUND_RECORDER
 #define OFX_KINECT_NUI_SOUND_RECORDER
 
+#ifndef NOMINMAX
+	#define NOMINMAX
+#endif
 #include <Windows.h>
 #include "kinect/nui/WaveFileWriter.h"
 #include "kinect/nui/WaveOutput.h"

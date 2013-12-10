@@ -16,6 +16,9 @@
 
 #include <queue>
 
+#ifndef NOMINMAX
+	#define NOMINMAX
+#endif
 #include "kinect/nui/Kinect.h"
 #include "ofMain.h"
 #include "ofxKinectNui.h"

@@ -13,6 +13,11 @@
 #ifndef OFX_KINECT_NUI_H
 #define OFX_KINECT_NUI_H
 
+/// Prevent max and min macros included in <windows.h>
+#ifndef NOMINMAX
+	#define NOMINMAX
+#endif
+
 #include "kinect/nui/Kinect.h" // this should be before ofMain.h
 #include "kinect/nui/ImageFrame.h" // for VideoFrame and DepthFrame
 #include "ofMain.h"
