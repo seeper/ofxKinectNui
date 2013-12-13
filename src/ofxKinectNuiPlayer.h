@@ -14,6 +14,7 @@
 #ifndef OFX_KINECT_NUI_PLAYER_H
 #define OFX_KINECT_NUI_PLAYER_H
 
+#define NOMINMAX
 #include "kinect/nui/Kinect.h" // this should be before ofMain.h
 #include "ofMain.h"
 #include "ofxBase3DVideo.h"
